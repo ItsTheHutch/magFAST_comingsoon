@@ -41,7 +41,7 @@ video {
 
 @media (pointer: coarse) and (hover: none) {
   body {
-    background: url("../img/bg.jpg") #000000 no-repeat center center scroll;
+    background: url("../img/bg-mobile-fallback.jpg") #002E66 no-repeat center center scroll;
     background-position: cover;
   }
   body video {
@@ -55,9 +55,8 @@ video {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #cf5537;
+  background-color: #cd9557;
   opacity: 0.7;
-  z-index: 1;
 }
 
 .masthead {
@@ -211,4 +210,10 @@ video {
 
 .input {
   font-weight: 300 !important;
+}
+
+.stream {
+  position: absolute;
+  top: 200px;
+  right: 10%;
 }
