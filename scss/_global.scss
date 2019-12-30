@@ -9,6 +9,8 @@ body {
   min-height: 35rem;
   position: relative;
   @include body-font;
+  background: url('../img/bg2.jpg') $primary no-repeat center center scroll;
+  background-position: cover;
 }
 
 h1,

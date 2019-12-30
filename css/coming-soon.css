@@ -14,6 +14,8 @@ body {
   position: relative;
   font-family: 'Source Sans Pro';
   font-weight: 300;
+  background: url("../img/bg2.jpg") #114f28 no-repeat center center scroll;
+  background-position: cover;
 }
 
 h1,
@@ -41,7 +43,7 @@ video {
 
 @media (pointer: coarse) and (hover: none) {
   body {
-    background: url("../img/bg2.jpg") #002E66 no-repeat center center scroll;
+    background: url("../img/bg2.jpg") #114f28 no-repeat center center scroll;
     background-position: cover;
   }
   body video {
@@ -55,7 +57,7 @@ video {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #cd9557;
+  background-color: #96dd76;
   opacity: 0.7;
 }
 
@@ -75,7 +77,7 @@ video {
   width: 100%;
   min-height: 35rem;
   height: 100%;
-  background-color: rgba(0, 46, 102, 0.8);
+  background-color: rgba(17, 79, 40, 0.8);
   -webkit-transform: skewY(4deg);
   transform: skewY(4deg);
   -webkit-transform-origin: bottom right;
@@ -137,6 +139,8 @@ video {
 .social-icons {
   position: absolute;
   margin-bottom: 2rem;
+  border-color: #fffb0f;
+  border-width: 2px;
   width: 100%;
   z-index: 2;
 }
@@ -155,9 +159,11 @@ video {
 
 .social-icons ul > li > a {
   display: block;
-  color: white;
-  background-color: rgba(0, 46, 102, 0.8);
+  color: #fffb0f;
+  background-color: rgba(128, 13, 9, 0.8);
   border-radius: 100%;
+  border-color: #fffb0f;
+  border-width: 2px;
   font-size: 2rem;
   line-height: 4rem;
   height: 4rem;
@@ -194,22 +200,28 @@ video {
     width: 4rem;
   }
   .social-icons ul > li > a:hover {
-    background-color: #002E66;
+    background-color: #800d09;
   }
 }
 
 .btn-secondary {
-  background-color: #cd9557;
-  border-color: #cd9557;
+  background-color: #800d09;
+  border-color: #fffb0f;
+  border-width: 2px;
+  color: #fffb0f;
 }
 
 .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
-  background-color: #ba7c37 !important;
-  border-color: #ba7c37 !important;
+  background-color: #500806 !important;
+  border-color: #500806 !important;
 }
 
 .input {
   font-weight: 300 !important;
+}
+
+a {
+  color: #fffb0f;
 }
 
 .stream {
