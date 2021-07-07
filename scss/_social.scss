@@ -1,6 +1,8 @@
 .social-icons {
   position: absolute;
   margin-bottom: 2rem;
+  border-color: $banana_yellow;
+  border-width: 2px;
   width: 100%;
   z-index: 2;
   ul {
@@ -13,9 +15,11 @@
       display: inline-block;
       > a {
         display: block;
-        color: white;
-        background-color: fade-out($primary, 0.2);
+        color: $banana_yellow;
+        background-color: fade-out($dark_red, 0.2);
         border-radius: 100%;
+        border-color: $banana_yellow;
+        border-width: 2px;
         font-size: 2rem;
         line-height: 4rem;
         height: 4rem;
@@ -50,7 +54,7 @@
           height: 4rem;
           width: 4rem;
           &:hover {
-            background-color: $primary;
+            background-color: $dark_red;
           }
         }
       }

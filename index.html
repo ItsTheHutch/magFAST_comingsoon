@@ -8,12 +8,19 @@
   <meta name="description" content="MAGFest's new speedrun-focused marathon supporting Child's Play Charity!">
   <meta name="author" content="">
 
-  <title>magFAST - Submit Your Run Now!</title>
+  <title>magFAST</title>
 
-  <meta property="og:title" content="magFAST - Speedrunning for Child's Play! - Submit Your Run Now!" />
+  <meta property="og:title" content="magFAST - Speedrunning for Child's Play!" />
   <meta property="og:description" content="MAGFest's speedrun-focused charity marathon for Child's Play!" />
   <meta property="og:url" content="http://www.magfast.org" />
   <meta property="og:image" content="/img/magfast-clock-v1-solidbg.png" />
+
+  <!-- We're old fashioned, Grab the jquery -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+  </script>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -52,20 +59,40 @@
           <div class="masthead-content text-white py-5 py-md-0">
             <h1 class="mb-3"><img src="img/magFAST_Logo_white.png" height="125px"></h1>
             <p class="mb-5">magFAST is a new speedrun-focused charity marathon held at <a href="https://super.magfest.org">Super MAGFest</a>! All proceeds support Child's Play, a
-            foundation that supports children in hospitals and domestic violence shelters around the world. Submit your run now and
-            you could show off in front of a live audience and viewers on Twitch!
-            magFAST runs <strong>January 2 - 5 2020</strong>!</p>
+            foundation that supports children in hospitals and domestic violence shelters around the world. Watch magFAST live on Twitch <strong>January 2 - 5 2020</strong>!</p>
             <div class="input-group input-group-newsletter">
               <!---<input type="email" class="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon">-->
-              <p class="mb-1">Run submissions are live!</p>
               <div class="input-group"> 
-                <a href="https://submissions.magfast.org/"><button class="btn btn-secondary" type="button">Submit a Run</button></a>
+                <a href="https://magfast.org/donate"><button class="btn btn-secondary" type="button">Donate</button></a>&NonBreakingSpace;
+                <a href="https://magfast.org/schedule"><button class="btn btn-secondary" type="button">Schedule</button></a>&NonBreakingSpace;
+                <a href="https://twitch.tv/magfast"><button class="btn btn-secondary" type="button">Watch on Twitch!</button></a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  
+  <div class="stream">
+    <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="twitch-stream"></div>
+    <script type="text/javascript">
+      var options = {
+        width: 960,
+        height: 585,
+        channel: "magfast"
+      };
+      var player = new Twitch.Player("twitch-stream", options);
+    </script>
+  </div>
+
+  <div class="tracker">
+    <script>
+      $.getJSON('https://tracker.magfast.org/2?json', function(data) {
+        console.log(data);
+      });  
+    </script>
   </div>
 
   <div class="social-icons">
